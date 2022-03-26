@@ -4,7 +4,7 @@ import "./navbar.css"
 const Navbar = () => {
     return (
         <div className='navbar'>
-            <h1>lucky Brand</h1>
+            <h1>Lucky Brand</h1>
         </div>
     );
 };

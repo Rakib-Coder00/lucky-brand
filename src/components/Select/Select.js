@@ -4,12 +4,11 @@ import { faTrash} from '@fortawesome/free-solid-svg-icons';
 import './Select.css'
 
 const Select = (props) => {
-    // console.log(props);
     const {select, openModal, resetState} = props
-    // console.log(openModal);
+    // const random = Math.floor(Math.random() * select.length);
     // console.log(select);
-    const random = Math.floor(Math.random() * select.length);
-    console.log(random);
+    // console.log(select[random]);
+    // console.log(random);
     return (
         <div className='cart'>
             <h2>Selected  Brands : {select.length}</h2>
@@ -24,7 +23,7 @@ const Select = (props) => {
                     )
                 }
             <div className="select-btn">
-            <button onClick={openModal}>Choose 1 for me</button>
+            <button onClick={()=>openModal(select)}>Choose 1 for me</button>
             <button onClick={resetState}>Choose Again</button>
             </div>
         </div>

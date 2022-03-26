@@ -26,33 +26,57 @@ function App() {
   const [select, setSelect] = useState([])
   const [modalIsOpen, setIsOpen] = useState(false);
   const [isDisabled, setDisabled] = useState(false);
-  // console.log(select);
+  const [randomNumber, setRandomNumber] = useState({})
 
-  function openModal() {
+  const random = Math.floor(Math.random() * select.length);
+  // console.log(randomNumber);
+  const {id, img, name} = randomNumber
+  // console.log(name,id);
+  // setRandomNumber(select[random])
+  // console.log(select[random]);
+  // console.log(select);
+    // console.log(select);
+    // console.log(select[random]);
+    // console.log(random);
+
+
+  function openModal(select) {
     setIsOpen(true);
+    // console.log(select);
+    setRandomNumber(select[random])
   }
   function closeModal() {
     setIsOpen(false);
   }
+
+
   useEffect(() => {
     fetch("data.json")
       .then((res) => res.json())
       .then((data) => setLaptops(data));
   }, []);
 
+
+
   const handleAddToCart = (laptop) =>{
-    // console.log(laptop);
 
     const newSelect = [...select, laptop];
+    console.log();
     setSelect(newSelect);
     // console.log(select.length);
     if (select.length === 3) {
       setDisabled(true);
     }
   }
+
+
+
 const resetState =()=>{
   setSelect([])
+  setDisabled(false)
 }
+
+
 
   return (
     <div>
@@ -85,15 +109,20 @@ const resetState =()=>{
         
       >
       <button onClick={closeModal}><FontAwesomeIcon icon={faRemove}></FontAwesomeIcon></button>
-        <h1>Lucky Brand</h1>
+        <h1>Your Lucky Brand :</h1>
         <div className="lucky-cart">
           {
-            select.map(lap => (
-              <div key={lap.id} className="select-items">
-                      <img src={lap.img} alt="" />
-                        <h4>{lap.name}</h4>
+
+              <div key={id} className="select-items">
+                      <img src={img} alt="" />
+                        <h4>{name}</h4>
                     </div>
-            ))
+            // select.map(lap => (
+            //   <div key={lap.id} className="select-items">
+            //           <img src={lap.img} alt="" />
+            //             <h4>{lap.name}</h4>
+            //         </div>
+            // ))
           }
         </div>
         </Modal>
