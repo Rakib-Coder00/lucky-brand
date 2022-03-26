@@ -1,0 +1,66 @@
+[
+    {
+      "id": 1,
+      "name": "ASUS",
+      "img": "https://www.startech.com.bd/image/cache/catalog/laptop/asus/vivobook-15/vivobook-15-04-500x500.jpg",
+      "price": "540",
+      "ratings": 5
+    },
+    {
+      "id": 2,
+      "name": "MSI",
+      "img": "https://www.startech.com.bd/image/cache/catalog/laptop/msi/prestige-14-a11scx/prestige-14-a11scx-gray-500x500.jpg",
+      "price": "650",
+      "ratings": 4
+    },
+    {
+      "id": 3,
+      "name": "SAMSUNG",
+      "img": "https://www.startech.com.bd/image/cache/catalog/laptop/samsung/galaxy-book-pro-360/galaxy-book-pro-360-003-500x500.jpg",
+      "price": "750",
+      "ratings": 5
+    },
+    {
+      "id": 4,
+      "name": "APPLE",
+      "img": "https://www.startech.com.bd/image/cache/catalog/laptop/apple/macbook-pro/mvvk2-2019/macbook-pro-mvvk2-2-500x500.jpg",
+      "price": "850",
+      "ratings": 5
+    },
+    {
+      "id": 5,
+      "name": "HP",
+      "img": "https://www.startech.com.bd/image/cache/catalog/workstation/hp-brand/zbook-create-g7/zbook-create-g7-01-500x500.jpg",
+      "price": "540",
+      "ratings": 4
+    },
+    {
+      "id": 6,
+      "name": "ACER",
+      "img": "https://www.startech.com.bd/image/cache/catalog/laptop/acer/nitro-5-an515/nitro-5-an515-01-500x500.jpg",
+      "price": "740",
+      "ratings": 4
+    },
+    {
+      "id": 7,
+      "name": "DELL",
+      "img": "https://www.startech.com.bd/image/cache/catalog/laptop/dell/15-3505/3505-01-500x500.jpg",
+      "price": "860",
+      "ratings": 5
+    },
+    {
+      "id": 8,
+      "name": "RAZER",
+      "img": "https://www.startech.com.bd/image/cache/catalog/laptop/razer/blade-15/base-model_1-500x500.jpg",
+      "price": "450",
+      "ratings": 4.5
+    },
+    {
+      "id": 9,
+      "name": "GIGABYTE",
+      "img": "https://www.startech.com.bd/image/cache/catalog/laptop/gigabyte/aero-15kb/aero-15kb-500x500.jpg",
+      "price": "940",
+      "ratings": 5
+    }
+  ]
+  
