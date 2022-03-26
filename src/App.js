@@ -7,6 +7,7 @@ import Select from "./components/Select/Select";
 function App() {
   const [laptops, setLaptops] = useState([]);
   const [select, setSelect] = useState([])
+  console.log(select);
   useEffect(() => {
     fetch("data.json")
       .then((res) => res.json())
@@ -14,17 +15,22 @@ function App() {
   }, []);
 
   const handleAddToCart = (laptop) =>{
+    // console.log(laptop);
     const newSelect = [...select, laptop];
     setSelect(newSelect);
 }
   return (
     <div>
       <Navbar />
+      <h1>Choose 4 Brands</h1>
       <div className="shop-container">
         <div className="products-container">
         {
           laptops.map(laptop => (
-          <Card laptop={laptop} />))
+          <Card key={laptop.id}
+           laptop={laptop}
+           handleAddToCart={handleAddToCart}
+          />))
         }
         </div>
         <div className="cart-container">

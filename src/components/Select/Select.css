@@ -3,3 +3,16 @@
     top: 0;
     padding: 30px 20px;
 }
+.select-btn button{
+    padding: 5px 10px;
+}
+.cart .select-items {
+    display: flex;
+    align-items: center;
+    justify-content:initial;
+}
+.cart .select-items img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
