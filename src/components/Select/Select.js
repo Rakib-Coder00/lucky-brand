@@ -1,29 +1,31 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrash} from '@fortawesome/free-solid-svg-icons';
 import './Select.css'
 
-const Select = ({select}) => {
+const Select = (props) => {
+    // console.log(props);
+    const {select, openModal, resetState} = props
+    // console.log(openModal);
     // console.log(select);
-    // const {name} = select
-    // let name = ''
-    // for (const laptop of select) {
-    //     // console.log(laptop);
-    //     name = name + laptop.name
-    // }
+    const random = Math.floor(Math.random() * select.length);
+    console.log(random);
     return (
         <div className='cart'>
             <h2>Selected  Brands : {select.length}</h2>
             {
                 select.map(laptop => (
-                    <div className="select-items">
+                    <div key={laptop.id} className="select-items">
                       <img src={laptop.img} alt="" />
                         <h4>{laptop.name}</h4>
+                        <FontAwesomeIcon icon={faTrash}></FontAwesomeIcon>
                     </div>
                 )
                     )
                 }
             <div className="select-btn">
-            <button>Choose 1 for me</button>
-            <button>Choose Again</button>
+            <button onClick={openModal}>Choose 1 for me</button>
+            <button onClick={resetState}>Choose Again</button>
             </div>
         </div>
     );

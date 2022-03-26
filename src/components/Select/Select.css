@@ -2,6 +2,7 @@
     position: sticky;
     top: 0;
     padding: 30px 20px;
+    /* z-index: 1000; */
 }
 .select-btn button{
     padding: 5px 10px;
@@ -9,7 +10,7 @@
 .cart .select-items {
     display: flex;
     align-items: center;
-    justify-content:initial;
+    justify-content:space-between;
 }
 .cart .select-items img{
     height: 30px;
