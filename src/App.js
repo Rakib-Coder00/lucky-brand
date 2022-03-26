@@ -29,20 +29,9 @@ function App() {
   const [randomNumber, setRandomNumber] = useState({})
 
   const random = Math.floor(Math.random() * select.length);
-  // console.log(randomNumber);
   const {id, img, name} = randomNumber
-  // console.log(name,id);
-  // setRandomNumber(select[random])
-  // console.log(select[random]);
-  // console.log(select);
-    // console.log(select);
-    // console.log(select[random]);
-    // console.log(random);
-
-
   function openModal(select) {
     setIsOpen(true);
-    // console.log(select);
     setRandomNumber(select[random])
   }
   function closeModal() {
@@ -63,7 +52,6 @@ function App() {
     const newSelect = [...select, laptop];
     console.log();
     setSelect(newSelect);
-    // console.log(select.length);
     if (select.length === 3) {
       setDisabled(true);
     }
@@ -117,12 +105,6 @@ const resetState =()=>{
                       <img src={img} alt="" />
                         <h4>{name}</h4>
                     </div>
-            // select.map(lap => (
-            //   <div key={lap.id} className="select-items">
-            //           <img src={lap.img} alt="" />
-            //             <h4>{lap.name}</h4>
-            //         </div>
-            // ))
           }
         </div>
         </Modal>
