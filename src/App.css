@@ -28,11 +28,10 @@ h1{
 .lucky-cart .select-items {
   display: flex;
   align-items: center;
-  /* justify-content:space-between; */
 }
 .lucky-cart .select-items img{
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
+  height: 130px;
+  width: 130px;
+  /* border-radius: 50%; */
   margin-right: 30px;
 }
